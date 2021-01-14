@@ -12,7 +12,7 @@ Windows users having errors due to file path problems.
 
 Run the program like this:
 
-*python webcam.py*
+*python webcam_cv3.py*
 
 alpython.com/blog/python/face-detection-in-python-using-a-webcam/
 
