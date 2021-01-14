@@ -1,3 +1,5 @@
+import sys
+
 import cv2
 import logging as log
 import datetime as dt
@@ -6,9 +8,12 @@ from time import sleep
 """ string (cascPath) change for Windows users, as cascPath value not working in Windows """
 
 # for Windows users
-cascPath = "Webcam-Face-Detect\haarcascade_frontalface_default.xml"
+# still using windows x64 bit but it shows 'win32' as a platform
+if sys.platform == 'win32':
+    cascPath = "Webcam-Face-Detect\haarcascade_frontalface_default.xml"
+else:
 # for linux version use this below
-# cascPath = "haarcascade_frontalface_default.xml"
+    cascPath = "haarcascade_frontalface_default.xml"
 # or use this if shown errors
 # cascPath = ".\haarcascade_frontalface_default.xml"
 faceCascade = cv2.CascadeClassifier(cascPath)
