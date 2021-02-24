@@ -3,11 +3,13 @@ Webcam-Face-Detect
 ==================
 
 ** PROBLEMS **
+
 On windows, following problems were occured:
 error: (-215:Assertion failed) !empty() in function 'cv::CascadeClassifier::detectMultiScale'
 `anonymous-namespace'::SourceReaderCB::~SourceReaderCB terminating async callback
 
 ** FIXES **
+
 Windows users having errors due to file path problems.
 
 Run the program like this:
